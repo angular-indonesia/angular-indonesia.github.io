@@ -102,7 +102,7 @@ body{
 	    padding: 150px 48px 32px 48px;
 	    position: relative;
 
-    	background: url(/assets/super-hero-large.png) no-repeat bottom center,linear-gradient(145deg,#0D47A1,#42A5F5);
+    	background: url(https://angular-indonesia.github.io/assets/super-hero-large.png) no-repeat bottom center,linear-gradient(145deg,#0D47A1,#42A5F5);
     	background-blend-mode: multiply;
     	background-size: 100%;
 
@@ -146,7 +146,7 @@ body{
 	@include clearfix();
 
     .logo-footer{
-    	background: url(/assets/angular-indonesia-white.png) 0 0/contain no-repeat;
+    	background: url(https://angular-indonesia.github.io/assets/angular-indonesia-white.png) 0 0/contain no-repeat;
     	height: 200px;
     }
 

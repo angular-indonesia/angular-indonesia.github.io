@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Angular Indonesia';
+  rootURL = 'https://angular-indonesia.github.io/';
+  logoURL = 'https://angular-indonesia.github.io/dist/assets/angular-indonesia.png';
 }

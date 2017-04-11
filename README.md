@@ -14,7 +14,8 @@ ng serve
 ```
 ng build --prod
 ```
-+ Fix Production
- - kopikan isi dari file dist/index.html ke file index.html yang ada di root folder
- - ganti semua url dengan dist/, contoh dist/favicon.ico. (termasuk link ke css dan javascript)
 
+## Gitflow
++ Semua pekerjaan ada di branch **develop**
++ Setelah pekerjaan selesai anda bisa build dari branch **develop** tersebut
++ Hasil build di branch **develop** yakni folder **/dist** kopikan semua isinya ke root branch **master**

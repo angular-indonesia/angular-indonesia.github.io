@@ -495,9 +495,9 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bem-kit@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/bem-kit/-/bem-kit-0.0.3.tgz#498c556f2f807156718bea736d919b2f42702d8d"
+bem-kit@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/bem-kit/-/bem-kit-0.0.4.tgz#0cbbf1a45440d88fa270ca71410d13ae7f77ea8c"
 
 better-assert@~1.0.0:
   version "1.0.2"

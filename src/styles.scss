@@ -1,4 +1,6 @@
-@import '~bem-kit/src/_bem-kit.scss';
+@import '~bem-kit/src/_all-mixins.scss';
+@import '~bem-kit/src/_scss/_normalize.scss';
+@import '~bem-kit/src/_scss/_base.scss';
 
 body{
 	font-family: 'Roboto', "Helvetica Neue", sans-serif;

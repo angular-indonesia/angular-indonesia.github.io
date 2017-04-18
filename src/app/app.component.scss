@@ -14,21 +14,20 @@ $breakPointDesktop  : 768 !default;
     top: 0;
     right: 0;
     left: 0;
-
     height: 56px;
     min-height: 56px;
     padding: 0;
-
     background: $theme;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .24);
 
+    @include clearfix();
+    -webkit-backface-visibility: hidden;
     @extend %flex;
     justify-content: flex-start;
     
     .logo
     {
         float: left;
-
         width: 168px;
         height: 56px;
         margin: 0 72px 0 0;
@@ -39,9 +38,7 @@ $breakPointDesktop  : 768 !default;
         a
         {
             font-size: 2rem;
-
             text-decoration: none;
-
             color: #fff;
         }
     }
@@ -64,19 +61,15 @@ $breakPointDesktop  : 768 !default;
             a
             {
                 font-size: 2rem;
-
                 position: relative;
-
                 padding: 14px 1em;
-
                 text-decoration: none;
-
                 color: #fff;
                 background-color: $theme;
+
                 &:hover
                 {
                     text-decoration: none;
-
                     background-color: $theme-lighter;
                 }
             }
@@ -89,19 +82,32 @@ $breakPointDesktop  : 768 !default;
     position: relative;
     color: #fff;
     background-color: $theme;
+    @extend %row;
+
+    h1{
+        font-size: 2rem;
+    }
 
     .cover{
-        height: 560px;
+        height: auto;
         text-align: center;
-
         box-sizing: border-box;
         box-shadow: none;
-        padding: 150px 48px 32px 48px;
+        padding: 100px 5px 32px 5px;
         position: relative;
 
         background: url(https://angular-indonesia.github.io/assets/super-hero-large.png) no-repeat bottom center,linear-gradient(145deg,#0D47A1,#42A5F5);
         background-blend-mode: multiply;
         background-size: 100%;
+
+        @media only screen and (min-width: #{$breakPointDesktop}px) {
+            padding: 100px 48px 32px 48px;
+            height: 560px;
+
+            h1{
+                font-size: 2.5rem;
+            }
+        }
 
         .content{
             font-size: 2.3rem;
@@ -117,34 +123,78 @@ $breakPointDesktop  : 768 !default;
         width: 240px;
     }
 
+    .join-us-btn{
+        display: inline-block;
+        background: rgba(255,255,255,0.87);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+        border-radius: 2px;
+        color: #1565C0;
+        font-weight: 500;
+        padding: 0 64px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        font-size: 15px;
+        line-height: 48px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        border: none;
+
+        &:hover{
+            background: #fff;
+            box-shadow: 0 8px 8px rgba(0,0,0,0.24), 0 0 8px rgba(0,0,0,0.12);
+            color: #1E88E5;
+        }
+    }
+
 
 }
 
 .main__article{
-    padding: 64px 96px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 64px 5px;
     color: $midnight-theme;
+    @extend %row;
+
+    @media only screen and (min-width: #{$breakPointDesktop}px) {
+        padding: 64px 96px;
+
+        h3{
+            font-size: 3rem;
+        }
+
+        .content{
+            font-size: 1.6rem;
+        }
+    }
 
     h3{
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     .content{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 }
 
 
 .main__footer{
-    padding: 16px 48px;
     background: $midnight-theme;
     color: #fff;
-    @include clearfix();
+    padding: 16px 5px;
+    @extend %row;
+
+    @media only screen and (min-width: #{$breakPointDesktop}px) {
+        padding: 16px 48px;
+    }
 
     .logo-footer{
-        background: url(https://angular-indonesia.github.io/assets/angular-indonesia-white.png) 0 0/contain no-repeat;
-        height: 200px;
+        display: none;
+
+        @media only screen and (min-width: #{$breakPointDesktop}px) {
+            background: url(https://angular-indonesia.github.io/assets/angular-indonesia-white.png) 0 0/contain no-repeat;
+            height: 200px;
+        }
     }
 
     .col-3{
